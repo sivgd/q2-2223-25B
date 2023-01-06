@@ -12,7 +12,11 @@ public class EnemyMovement : MonoBehaviour
 
     public GameObject TL;
     public GameObject TR;
-    public bool TLtrigger, TRtrigger;
+    public GameObject TBL;
+    public GameObject TBR;
+    public GameObject TB;
+    public GameObject SR;
+    public bool TLtrigger, TRtrigger, TBLtrigger, TBRtrigger, TBtrigger;
     
 
 
@@ -29,12 +33,15 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        TLtrigger = TL.GetComponent<TriggerLeft>().leftcollide;
-        TRtrigger = TR.GetComponent<TriggerRight>().rightcollide;
+        TLtrigger = TL.GetComponent<Trigger>().collided;
+        TRtrigger = TR.GetComponent<Trigger>().collided;
+        TBLtrigger = TBL.GetComponent<Trigger>().collided;
+        TBRtrigger = TBR.GetComponent<Trigger>().collided;
+        TBtrigger = TB.GetComponent<Trigger>().collided;
         //Debug.Log(TLtrigger + " " + TRtrigger);
         if ((TLtrigger == true) ^ (TRtrigger == true))
         {
-            Debug.Log(TLtrigger + " " + TRtrigger);
+            //Debug.Log(TLtrigger + " " + TRtrigger);
             if (TLtrigger == true)
             {
                 MoveLeft = false;
@@ -44,12 +51,25 @@ public class EnemyMovement : MonoBehaviour
                 MoveLeft = true;
             }
         }
+        if (TBtrigger != true)
+        {
+            if (TBLtrigger != true)
+            {
+                MoveLeft = false;
+            }
+            if (TBRtrigger != true)
+            {
+                MoveLeft = true;
+            }
+        }
         if (MoveLeft == true)
         {
+            SR.flipX = false;
             rb2.AddForce(new Vector2(-accel, 0));
         }
         else
         {
+            SR.flipX = true;
             rb2.AddForce(new Vector2(accel, 0));
         }
 

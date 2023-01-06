@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerRight : MonoBehaviour
+public class Trigger : MonoBehaviour
 {
-    public bool rightcollide = false;
+    public bool collided = false;
     private Collider2D rb2;
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,6 @@ public class TriggerRight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rightcollide = rb2.IsTouchingLayers();
+        collided = rb2.IsTouchingLayers();
     }
 }
