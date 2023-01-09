@@ -8,14 +8,13 @@ public class EnemyMovement : MonoBehaviour
     public float accel = 8;
     //public GameObject mainPlayer;
     private Rigidbody2D rb2;
-    private bool MoveLeft = true;
+    private bool MoveLeft = false;
 
     public GameObject TL;
     public GameObject TR;
     public GameObject TBL;
     public GameObject TBR;
     public GameObject TB;
-    //public GameObject SR;
     public bool TLtrigger, TRtrigger, TBLtrigger, TBRtrigger, TBtrigger;
     
 
@@ -42,36 +41,53 @@ public class EnemyMovement : MonoBehaviour
         if ((TLtrigger == true) ^ (TRtrigger == true))
         {
             //Debug.Log(TLtrigger + " " + TRtrigger);
-            if (TLtrigger == true)
-            {
-                MoveLeft = false;
-            }
+            //if (TLtrigger == true)
+            //{
+            //    transform.rotation = new Quaternion(0, 0, 0, 0);
+                //MoveLeft = false;
+            //}
             if (TRtrigger == true)
             {
-                MoveLeft = true;
+                transform.Rotate(0, 180, 0, Space.Self);
+                if (MoveLeft == true)
+                {
+                    MoveLeft = false;
+                }
+                else
+                {
+                    MoveLeft = true;
+                }
             }
         }
         if (TBtrigger != true)
         {
             if (TBLtrigger != true)
             {
-                MoveLeft = false;
+                //MoveLeft = false;
             }
             if (TBRtrigger != true)
             {
-                MoveLeft = true;
+                //MoveLeft = true;
             }
         }
-        if (MoveLeft == true)
+        //if (MoveLeft == true)
+        //{
+        //    rb2.AddForce(new Vector2(-accel, 0));
+        //}
+        //else
+        //{
+        //    rb2.AddForce(new Vector2(accel, 0));
+        //}
+        Debug.Log(transform.rotation.y);
+        if (transform.rotation.y == -1)
         {
-            //SR.flipX = false;
             rb2.AddForce(new Vector2(-accel, 0));
         }
         else
         {
-            //SR.flipX = true;
             rb2.AddForce(new Vector2(accel, 0));
         }
+        //rb2.AddForce(new Vector2(accel * (transform.rotation.y / Mathf.Abs(transform.rotation.y)), 0));
 
     }
 }

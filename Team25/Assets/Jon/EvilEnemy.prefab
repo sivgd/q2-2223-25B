@@ -57,6 +57,7 @@ MonoBehaviour:
   TBL: {fileID: 8074173201969824581}
   TBR: {fileID: 4127397882394186229}
   TB: {fileID: 2865299185033069527}
+  SR: {fileID: 7516344433079211494}
   TLtrigger: 0
   TRtrigger: 0
   TBLtrigger: 0
