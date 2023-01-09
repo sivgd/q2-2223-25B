@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     public GameObject TBL;
     public GameObject TBR;
     public GameObject TB;
-    public GameObject SR;
+    //public GameObject SR;
     public bool TLtrigger, TRtrigger, TBLtrigger, TBRtrigger, TBtrigger;
     
 
@@ -64,12 +64,12 @@ public class EnemyMovement : MonoBehaviour
         }
         if (MoveLeft == true)
         {
-            SR.flipX = false;
+            //SR.flipX = false;
             rb2.AddForce(new Vector2(-accel, 0));
         }
         else
         {
-            SR.flipX = true;
+            //SR.flipX = true;
             rb2.AddForce(new Vector2(accel, 0));
         }
 
