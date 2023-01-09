@@ -29,7 +29,7 @@ public class SideMove : MonoBehaviour
         if (Input.GetAxis("Horizontal") < 0)
         {
             sr.flipX = true;
-            rb2.AddForce(new Vector2(-accel, 0))
+            rb2.AddForce(new Vector2(-accel, 0));
         }
 
 
