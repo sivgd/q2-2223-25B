@@ -49,6 +49,7 @@ public class EnemyMovement : MonoBehaviour
             if (TRtrigger == true)
             {
                 transform.Rotate(0, 180, 0, Space.Self);
+                rb2.velocity = new Vector2(0, 0);
                 if (MoveLeft == true)
                 {
                     MoveLeft = false;
@@ -68,6 +69,15 @@ public class EnemyMovement : MonoBehaviour
             if (TBRtrigger != true)
             {
                 transform.Rotate(0, 180, 0, Space.Self);
+                rb2.velocity = new Vector2(0, 0);
+                if (MoveLeft == true)
+                {
+                    MoveLeft = false;
+                }
+                else
+                {
+                    MoveLeft = true;
+                }
             }
         }
         //if (MoveLeft == true)
