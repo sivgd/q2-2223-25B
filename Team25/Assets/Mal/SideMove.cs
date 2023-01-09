@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,15 +21,15 @@ public class SideMove : MonoBehaviour
         //Move right
         if(Input.GetAxis("Horizontal")> 0)
         {
-            sr.flipX = true;
+            sr.flipX = false;
             rb2.AddForce(new Vector2(accel, 0));
         }
 
         //Move left
         if (Input.GetAxis("Horizontal") < 0)
         {
-            sr.flipX = false;
-            rb2.AddForce(new Vector2(-accel, 0));
+            sr.flipX = true;
+            rb2.AddForce(new Vector2(-accel, 0))
         }
 
 
