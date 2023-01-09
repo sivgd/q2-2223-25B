@@ -59,7 +59,7 @@ public class EnemyMovement : MonoBehaviour
                 }
             }
         }
-        if (TBtrigger != true)
+        if (TBtrigger == true)
         {
             if (TBLtrigger != true)
             {
@@ -67,7 +67,7 @@ public class EnemyMovement : MonoBehaviour
             }
             if (TBRtrigger != true)
             {
-                //MoveLeft = true;
+                transform.Rotate(0, 180, 0, Space.Self);
             }
         }
         //if (MoveLeft == true)
@@ -78,7 +78,7 @@ public class EnemyMovement : MonoBehaviour
         //{
         //    rb2.AddForce(new Vector2(accel, 0));
         //}
-        Debug.Log(transform.rotation.y);
+        //Debug.Log(transform.rotation.y);
         if (transform.rotation.y == -1)
         {
             rb2.AddForce(new Vector2(-accel, 0));
