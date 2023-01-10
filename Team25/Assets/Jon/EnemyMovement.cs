@@ -8,15 +8,12 @@ public class EnemyMovement : MonoBehaviour
     public float accel = 8;
     //public GameObject mainPlayer;
     private Rigidbody2D rb2;
-    private bool MoveLeft = false;
 
-    public GameObject TL;
-    public GameObject TR;
-    public GameObject TBL;
-    public GameObject TBR;
+    public GameObject TF;
+    public GameObject TBF;
     public GameObject TB;
-    public bool TLtrigger, TRtrigger, TBLtrigger, TBRtrigger, TBtrigger;
-    
+    public bool TFtrigger, TBFtrigger, TBtrigger;
+
 
 
     //private Vector2 playerPosition;
@@ -32,63 +29,27 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        TLtrigger = TL.GetComponent<Trigger>().collided;
-        TRtrigger = TR.GetComponent<Trigger>().collided;
-        TBLtrigger = TBL.GetComponent<Trigger>().collided;
-        TBRtrigger = TBR.GetComponent<Trigger>().collided;
+        //GetComponent is called every update, otherwise the info would be outdated
+        TFtrigger = TF.GetComponent<Trigger>().collided;
+        TBFtrigger = TBF.GetComponent<Trigger>().collided;
         TBtrigger = TB.GetComponent<Trigger>().collided;
+
+
         //Debug.Log(TLtrigger + " " + TRtrigger);
-        if ((TLtrigger == true) ^ (TRtrigger == true))
+
+        if (TFtrigger == true)
         {
-            //Debug.Log(TLtrigger + " " + TRtrigger);
-            //if (TLtrigger == true)
-            //{
-            //    transform.rotation = new Quaternion(0, 0, 0, 0);
-                //MoveLeft = false;
-            //}
-            if (TRtrigger == true)
-            {
-                transform.Rotate(0, 180, 0, Space.Self);
-                rb2.velocity = new Vector2(0, 0);
-                if (MoveLeft == true)
-                {
-                    MoveLeft = false;
-                }
-                else
-                {
-                    MoveLeft = true;
-                }
-            }
+            transform.Rotate(0, 180, 0, Space.Self);
+            rb2.velocity = new Vector2(0, 0);
         }
-        if (TBtrigger == true)
+
+        if (TBtrigger == true && TBFtrigger != true)
         {
-            if (TBLtrigger != true)
-            {
-                //MoveLeft = false;
-            }
-            if (TBRtrigger != true)
-            {
-                transform.Rotate(0, 180, 0, Space.Self);
-                rb2.velocity = new Vector2(0, 0);
-                if (MoveLeft == true)
-                {
-                    MoveLeft = false;
-                }
-                else
-                {
-                    MoveLeft = true;
-                }
-            }
+            transform.Rotate(0, 180, 0, Space.Self);
+            //still prevents the enemy from falling off cliff due to too much speed
+            rb2.velocity = new Vector2(0, 0);
         }
-        //if (MoveLeft == true)
-        //{
-        //    rb2.AddForce(new Vector2(-accel, 0));
-        //}
-        //else
-        //{
-        //    rb2.AddForce(new Vector2(accel, 0));
-        //}
-        //Debug.Log(transform.rotation.y);
+        //movement direction depends entirely on rotation
         if (transform.rotation.y == -1)
         {
             rb2.AddForce(new Vector2(-accel, 0));
@@ -97,7 +58,6 @@ public class EnemyMovement : MonoBehaviour
         {
             rb2.AddForce(new Vector2(accel, 0));
         }
-        //rb2.AddForce(new Vector2(accel * (transform.rotation.y / Mathf.Abs(transform.rotation.y)), 0));
 
     }
 }
