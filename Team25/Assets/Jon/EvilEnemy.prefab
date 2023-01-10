@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83f52afa96ee96479a36e8992f3c8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accel: 8
+  accel: 9
   TF: {fileID: 2005799550629311845}
   TBF: {fileID: 4127397882394186229}
   TB: {fileID: 2865299185033069527}
@@ -69,7 +69,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
