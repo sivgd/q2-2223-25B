@@ -41,7 +41,7 @@ public class Jump : MonoBehaviour
             jumpStrength = 1000;
         } else
         {
-            jumpStrength = 400;
+            jumpStrength = 500;
         }
     }
 
