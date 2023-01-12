@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    public float jumpStrength = 400;
+    public float jumpStrength;//500
+    public float superJumpStrength;//1000
     public bool grounded;
+    private float currentJumpStrength;
     private Rigidbody2D rb2;
 
     // Start is called before the first frame update
@@ -38,10 +40,10 @@ public class Jump : MonoBehaviour
         Debug.Log(collision.tag);
         if (collision.tag == "SuperJump") 
         {
-            jumpStrength = 1000;
+            currentJumpStrength = superJumpStrength;
         } else
         {
-            jumpStrength = 500;
+            currentJumpStrength = jumpStrength;
         }
     }
 
