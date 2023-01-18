@@ -953,6 +953,10 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 1019493188}
+    - target: {fileID: 2005799549317069949, guid: 745b3ccd2ba2013428e7d9c52ef9458a, type: 3}
+      propertyPath: AvoidEdge
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2005799550558202829, guid: 745b3ccd2ba2013428e7d9c52ef9458a, type: 3}
       propertyPath: m_Enabled
       value: 1
