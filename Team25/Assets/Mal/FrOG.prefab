@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accel: 9
+  superaccel: 12
 --- !u!114 &5042157799317818102
 MonoBehaviour:
   m_ObjectHideFlags: 0

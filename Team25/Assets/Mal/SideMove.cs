@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class SideMove : MonoBehaviour
 {
-    public float accel = 8;
+    public float accel;
+    public float superaccel;
+    public bool superduperexpertaccelactive;
+    private float currentaccel;
     private Rigidbody2D rb2;
     private SpriteRenderer sr;
 
@@ -17,19 +20,30 @@ public class SideMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+
+
+        if (superduperexpertaccelactive == true)
+        {
+            currentaccel = superaccel;
+        }
+        else
+        {
+            currentaccel = accel;
+        }
+
+
         //Move right
         if(Input.GetAxis("Horizontal")> 0)
         {
             sr.flipX = false;
-            rb2.AddForce(new Vector2(accel, 0));
+            rb2.AddForce(new Vector2(currentaccel, 0));
         }
 
         //Move left
         if (Input.GetAxis("Horizontal") < 0)
         {
             sr.flipX = true;
-            rb2.AddForce(new Vector2(-accel, 0));
+            rb2.AddForce(new Vector2(-currentaccel, 0));
         }
 
 
