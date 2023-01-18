@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
     public GameObject TBF;
     public GameObject TB;
     public bool TFtrigger, TBFtrigger, TBtrigger;
+    public bool AvoidEdge;
 
 
 
@@ -43,7 +44,7 @@ public class EnemyMovement : MonoBehaviour
             rb2.velocity = new Vector2(0, 0);
         }
 
-        if (TBtrigger == true && TBFtrigger != true)
+        if (AvoidEdge == true && TBtrigger == true && TBFtrigger != true)
         {
             transform.Rotate(0, 180, 0, Space.Self);
             //still prevents the enemy from falling off cliff due to too much speed
