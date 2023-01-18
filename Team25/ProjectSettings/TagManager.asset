@@ -8,6 +8,7 @@ TagManager:
   - lethal
   - SuperJump
   - checkpoint
+  - SuperSpeed
   layers:
   - Default
   - TransparentFX
