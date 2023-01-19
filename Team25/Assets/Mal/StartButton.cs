@@ -18,6 +18,6 @@ public class StartButton : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("The swapm life");
+        SceneManager.LoadScene("Frog life");
     }
 }
