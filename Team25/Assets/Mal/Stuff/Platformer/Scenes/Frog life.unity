@@ -8687,5 +8687,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrOG
       objectReference: {fileID: 0}
+    - target: {fileID: 7446360691358685436, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
+      propertyPath: grounded
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
