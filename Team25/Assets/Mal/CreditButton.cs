@@ -18,6 +18,6 @@ public class CreditButton : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("Credits scene");
     }
 }
