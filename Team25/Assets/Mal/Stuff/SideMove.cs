@@ -9,31 +9,40 @@ public class SideMove : MonoBehaviour
     private float currentaccel;
     private Rigidbody2D rb2;
     private SpriteRenderer sr;
+    Animator a;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2 = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        a = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
 
+        float horizValue = Input.GetAxis("Horizontal");
 
-
-        //Move right
-        if(Input.GetAxis("Horizontal")> 0)
+        if(horizValue == 0)
         {
-            sr.flipX = false;
-            rb2.AddForce(new Vector2(currentaccel, 0));
+            a.SetBool("Moving", false);
+        }
+        else
+        {
+            a.SetBool("Moving", true);
         }
 
-        //Move left
-        if (Input.GetAxis("Horizontal") < 0)
+        rb2.AddForce(new Vector2(horizValue * currentaccel, 0));
+
+        //Move right
+        if(horizValue < 0)
         {
             sr.flipX = true;
-            rb2.AddForce(new Vector2(-currentaccel, 0));
+        }
+        else
+        {
+            sr.flipX = false;
         }
 
 
