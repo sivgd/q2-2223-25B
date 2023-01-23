@@ -670,8 +670,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &192794176
-BoxCollider2D:
+--- !u!60 &192794176
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -693,9 +693,22 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.25, y: 0.75}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.505, y: -0.195}
+      - {x: 0.73499995, y: -0.24499999}
+      - {x: 0.955, y: -0.255}
+      - {x: 1.125, y: -0.21499999}
+      - {x: 1.125, y: 0.375}
+      - {x: 0.97499996, y: 0.375}
+      - {x: 0.805, y: 0.345}
+      - {x: 0.73499995, y: 0.375}
+      - {x: -1.125, y: 0.375}
+      - {x: -1.125, y: -0.375}
+      - {x: -0.705, y: -0.375}
+      - {x: -0.505, y: -0.305}
+      - {x: 0.005, y: -0.33499998}
+      - {x: 0.255, y: -0.325}
 --- !u!212 &192794177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7017,8 +7030,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1804277704
-BoxCollider2D:
+--- !u!60 &1804277704
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7040,9 +7053,22 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.25, y: 0.75}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.505, y: -0.195}
+      - {x: 0.73499995, y: -0.24499999}
+      - {x: 0.955, y: -0.255}
+      - {x: 1.125, y: -0.21499999}
+      - {x: 1.125, y: 0.375}
+      - {x: 0.97499996, y: 0.375}
+      - {x: 0.805, y: 0.345}
+      - {x: 0.73499995, y: 0.375}
+      - {x: -1.125, y: 0.375}
+      - {x: -1.125, y: -0.375}
+      - {x: -0.705, y: -0.375}
+      - {x: -0.505, y: -0.305}
+      - {x: 0.005, y: -0.33499998}
+      - {x: 0.255, y: -0.325}
 --- !u!212 &1804277705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7617,8 +7643,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1929672590
-BoxCollider2D:
+--- !u!60 &1929672590
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7640,9 +7666,60 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 11.37, y: 2.2}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -3.175, y: -0.79999995}
+      - {x: -2.955, y: -0.65999997}
+      - {x: -2.825, y: -0.58}
+      - {x: -2.405, y: -0.38}
+      - {x: -2.215, y: -0.31}
+      - {x: -1.8549999, y: -0.14}
+      - {x: -1.645, y: -0.089999996}
+      - {x: -1.4649999, y: -0.04}
+      - {x: -0.49499997, y: -0.04}
+      - {x: -0.48499998, y: -0.049999997}
+      - {x: -0.235, y: -0.11}
+      - {x: 0.33499998, y: -0.22}
+      - {x: 0.45499998, y: -0.24}
+      - {x: 0.635, y: -0.24}
+      - {x: 0.875, y: -0.28}
+      - {x: 1.235, y: -0.29999998}
+      - {x: 1.495, y: -0.29999998}
+      - {x: 2.175, y: -0.22999999}
+      - {x: 2.475, y: -0.21}
+      - {x: 2.995, y: -0.19}
+      - {x: 3.415, y: -0.17999999}
+      - {x: 3.635, y: -0.17}
+      - {x: 3.995, y: -0.16}
+      - {x: 4.1749997, y: -0.14999999}
+      - {x: 4.345, y: -0.13}
+      - {x: 4.525, y: -0.13}
+      - {x: 4.6349998, y: -0.14999999}
+      - {x: 4.855, y: -0.16}
+      - {x: 4.915, y: -0.19}
+      - {x: 5.045, y: -0.21}
+      - {x: 5.275, y: -0.22999999}
+      - {x: 5.435, y: -0.25}
+      - {x: 5.505, y: -0.26999998}
+      - {x: 5.665, y: -0.29}
+      - {x: 5.685, y: -0.29}
+      - {x: 5.685, y: 1.1}
+      - {x: -3.865, y: 1.1}
+      - {x: -4.115, y: 0.96999997}
+      - {x: -4.4249997, y: 0.83}
+      - {x: -4.6349998, y: 0.71}
+      - {x: -4.805, y: 0.61}
+      - {x: -4.955, y: 0.52}
+      - {x: -5.1549997, y: 0.37}
+      - {x: -5.185, y: 0.34}
+      - {x: -5.325, y: 0.22999999}
+      - {x: -5.4849997, y: 0.13}
+      - {x: -5.685, y: 0.07}
+      - {x: -5.685, y: -1.1}
+      - {x: -3.635, y: -1.1}
+      - {x: -3.5649998, y: -1.0699999}
+      - {x: -3.475, y: -1}
+      - {x: -3.335, y: -0.91999996}
 --- !u!212 &1929672591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7702,8 +7779,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929672589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.5, y: 8.1, z: 0}
-  m_LocalScale: {x: 3.8944, y: 4.779, z: 1}
+  m_LocalPosition: {x: 32.5, y: 8.0353, z: 0}
+  m_LocalScale: {x: 3.8944, y: 4.8377814, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 76
