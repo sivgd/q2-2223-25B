@@ -40,7 +40,7 @@ public class SideMove : MonoBehaviour
         {
             sr.flipX = true;
         }
-        else
+        else if(horizValue > 0)
         {
             sr.flipX = false;
         }
