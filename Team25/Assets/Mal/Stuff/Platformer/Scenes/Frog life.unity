@@ -8649,14 +8649,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7446360691358685426, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 7446360691358685427, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
-      propertyPath: superaccel
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 7446360691358685431, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
       propertyPath: m_Name
       value: FrOG
@@ -8664,14 +8656,6 @@ PrefabInstance:
     - target: {fileID: 7446360691358685436, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
       propertyPath: grounded
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7446360691358685437, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
-      propertyPath: m_Size.x
-      value: 2.069973
-      objectReference: {fileID: 0}
-    - target: {fileID: 7446360691358685437, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7fef3b5da85f434788215940c74feb8, type: 3}
