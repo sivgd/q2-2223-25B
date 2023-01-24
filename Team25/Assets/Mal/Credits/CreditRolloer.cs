@@ -12,7 +12,7 @@ public class CreditRolloer : MonoBehaviour
     void Start()
     {
         //For each credit scene, add a reference here
-        creditScenes[0] = GameObject.find("Credit1");
+        //creditScenes[0] = GameObject.find("Credit1"); - needs fixing
     }
 
     // Update is called once per frame
