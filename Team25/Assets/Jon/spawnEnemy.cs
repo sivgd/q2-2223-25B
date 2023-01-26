@@ -5,6 +5,8 @@ using UnityEngine;
 public class spawnEnemy : MonoBehaviour
 {
     public GameObject Enemy;
+    public GameObject T;
+    public bool Trigger;
     private 
     // Start is called before the first frame update
     void Start()

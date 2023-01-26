@@ -141,7 +141,7 @@ GameObject:
   m_Layer: 0
   m_Name: spawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2005799549317069936, guid: 745b3ccd2ba2013428e7d9c52ef9458a, type: 3}
+  T: {fileID: 0}
+  Trigger: 0
 --- !u!1 &470280818
 GameObject:
   m_ObjectHideFlags: 0
