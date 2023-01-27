@@ -18,7 +18,7 @@ public class spawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Trigger = T.GetComponent<Trigger>().collided;
+        Trigger = T.GetComponent<Trigger2>().collided;
         if (Trigger == true)
         {
             GameObject b = Instantiate(Enemy, transform.position, Quaternion.identity);

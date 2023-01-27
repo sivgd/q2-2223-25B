@@ -15,6 +15,15 @@ public class Trigger2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        collided = rb2.IsTouchingLayers();
+        //collided = rb2.IsTouchingLayers();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("Player collided with me...");
+            collided = true;
+        }
     }
 }
