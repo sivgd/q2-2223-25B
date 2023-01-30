@@ -160,7 +160,7 @@ MonoBehaviour:
   TFtrigger: 0
   TBFtrigger: 0
   TBtrigger: 0
-  AvoidEdge: 1
+  AvoidEdge: 0
 --- !u!50 &2005799549317069951
 Rigidbody2D:
   serializedVersion: 4
