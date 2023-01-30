@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874f0ff2a5d9c9948a3755b13fb3b178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accel: 9
+  accel: 12
   superaccel: 15
 --- !u!61 &7446360691358685437
 BoxCollider2D:
@@ -141,7 +141,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.5
+  m_LinearDrag: 1
   m_AngularDrag: 0.005
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -161,8 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5da7d00a5b66642a05661000a9bb68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpStrength: 450
-  superJumpStrength: 900
+  jumpStrength: 500
+  superJumpStrength: 1200
   grounded: 0
 --- !u!61 &7446360691358685439
 BoxCollider2D:
