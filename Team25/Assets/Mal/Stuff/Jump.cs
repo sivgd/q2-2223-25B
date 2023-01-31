@@ -26,7 +26,7 @@ public class Jump : MonoBehaviour
 
         if(Input.GetButtonDown("Jump") && grounded == true)
         {
-            rb2.AddForce(new Vector2(0, currentJumpStrength));
+            rb2.AddForce(new Vector2(0, currentJumpStrength * transform.position.x));
         }
     }
 
