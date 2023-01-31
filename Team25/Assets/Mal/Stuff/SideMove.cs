@@ -6,6 +6,7 @@ public class SideMove : MonoBehaviour
 {
     public float accel;
     public float superaccel;
+    public bool fast;
     private float currentaccel;
     private Rigidbody2D rb2;
     private SpriteRenderer sr;
@@ -51,7 +52,7 @@ public class SideMove : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.tag);
-        if (collision.tag == "SuperSpeed")
+        if (fast == true)
         {
             currentaccel = superaccel;
         }
