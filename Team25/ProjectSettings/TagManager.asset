@@ -9,6 +9,7 @@ TagManager:
   - SuperJump
   - checkpoint
   - SuperSpeed
+  - SuperSPEED
   layers:
   - Default
   - TransparentFX
