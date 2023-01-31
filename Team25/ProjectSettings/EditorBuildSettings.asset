@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Mal/Stuff/Platformer/Scenes/Menu.unity
     guid: fd4cf3ebd2cd86647a8ee1de8470f4e4
   - enabled: 1
-    path: Assets/Mal/Stuff/Platformer/Scenes/The swapm life.unity
+    path: Assets/Mal/Stuff/Platformer/Scenes/Frog life.unity
     guid: 6db3f36f44b217d41b203e4da5bb3eb5
   - enabled: 1
-    path: Assets/Mal/Stuff/Platformer/Scenes/Credit scene.unity
+    path: Assets/Mal/Stuff/Platformer/Scenes/CreditScenes.unity
     guid: 70c3f846e40eb76448c71a47260dff08
   m_configObjects: {}

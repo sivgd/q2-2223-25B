@@ -15,6 +15,7 @@ public class Trigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        collided = rb2.IsTouchingLayers();
+        LayerMask mask = LayerMask.GetMask("Default");
+        collided = rb2.IsTouchingLayers(mask);
     }
 }
