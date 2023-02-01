@@ -778,6 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 0
+  duration: 4
   pickupEffect: {fileID: 1048980794}
 --- !u!1 &235488605
 GameObject:
@@ -1041,6 +1042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.5
+  duration: 4
   pickupEffect: {fileID: 1158526815}
 --- !u!60 &250731034
 PolygonCollider2D:
@@ -3608,6 +3610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 0
+  duration: 4
   pickupEffect: {fileID: 1048980794}
 --- !u!60 &636195044
 PolygonCollider2D:
@@ -4358,6 +4361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.5
+  duration: 4
   pickupEffect: {fileID: 1158526815}
 --- !u!60 &790104976
 PolygonCollider2D:
@@ -5425,6 +5429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 0
+  duration: 4
   pickupEffect: {fileID: 1543239393}
 --- !u!1 &1016523056 stripped
 GameObject:
@@ -5444,6 +5449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.5
+  duration: 4
   pickupEffect: {fileID: 1158526815}
 --- !u!60 &1016523058
 PolygonCollider2D:
@@ -5770,6 +5776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.5
+  duration: 4
   pickupEffect: {fileID: 1158526815}
 --- !u!60 &1053111374
 PolygonCollider2D:
@@ -6521,6 +6528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.5
+  duration: 4
   pickupEffect: {fileID: 0}
 --- !u!60 &1182839765
 PolygonCollider2D:
@@ -6914,7 +6922,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.0810823
+  orthographic size: 5.4760337
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7194,6 +7202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 0
+  duration: 4
   pickupEffect: {fileID: 1543239393}
 --- !u!60 &1332601401
 PolygonCollider2D:
@@ -7612,17 +7621,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4256866279655517970, guid: 8becf853d038d6944b3dfb6ef97a1f03, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4256866279655517971, guid: 8becf853d038d6944b3dfb6ef97a1f03, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4256866279655517971, guid: 8becf853d038d6944b3dfb6ef97a1f03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.08
+      value: -23.49
       objectReference: {fileID: 0}
     - target: {fileID: 4256866279655517971, guid: 8becf853d038d6944b3dfb6ef97a1f03, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.92
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4256866279655517971, guid: 8becf853d038d6944b3dfb6ef97a1f03, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8660,6 +8673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 0
+  duration: 4
   pickupEffect: {fileID: 1543239393}
 --- !u!60 &1691066078
 PolygonCollider2D:
@@ -9323,6 +9337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.5
+  duration: 4
   pickupEffect: {fileID: 1158526815}
 --- !u!60 &1849534497
 PolygonCollider2D:
@@ -10306,6 +10321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.5
+  duration: 4
   pickupEffect: {fileID: 1158526815}
 --- !u!60 &2071046425
 PolygonCollider2D:
@@ -10365,8 +10381,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087089366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.138, y: -0.0288, z: 10}
-  m_LocalScale: {x: 2.0021515, y: 1.3227663, z: 1}
+  m_LocalPosition: {x: 0.0594, y: -0.0918, z: 10}
+  m_LocalScale: {x: 2.148097, y: 1.4492313, z: 1}
   m_Children: []
   m_Father: {fileID: 1291165331}
   m_RootOrder: 0
@@ -10440,6 +10456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1.5
+  duration: 4
   pickupEffect: {fileID: 1158526815}
 --- !u!60 &2099660055
 PolygonCollider2D:
