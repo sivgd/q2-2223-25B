@@ -18,6 +18,10 @@ public class SideMove : MonoBehaviour
     AudioSource steps;
     private bool isplaying;
 
+    private float speed;
+    private float boostTimer;
+    private bool boosting;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,10 @@ public class SideMove : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
         steps = GetComponent<AudioSource>();
+
+        speed = 12;
+        boostTimer = 3;
+        boosting = false;
     }
     private void Update()
     {
