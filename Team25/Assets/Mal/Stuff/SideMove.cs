@@ -17,6 +17,8 @@ public class SideMove : MonoBehaviour
     Animator a;
     AudioSource steps;
     private bool isplaying;
+    public GameObject frognoiseholder;
+    AudioSource frognoises;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,7 @@ public class SideMove : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         a = GetComponent<Animator>();
         steps = GetComponent<AudioSource>();
+        frognoises = frognoiseholder.GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -34,6 +37,7 @@ public class SideMove : MonoBehaviour
         if (Input.GetButtonDown("Jump") && grounded == true)
         {
             rb2.AddForce(new Vector2(0, currentJumpStrength * transform.localScale.x));
+            frognoises.Play();
         }
     }
     private void FixedUpdate()
