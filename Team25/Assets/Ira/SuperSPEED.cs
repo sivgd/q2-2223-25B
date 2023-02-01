@@ -6,7 +6,7 @@ public class SuperSPEED : MonoBehaviour
 {
 
     public float multiplier = 1f;
-
+    public float duration = 4f;
 
     public GameObject pickupEffect;
 
@@ -15,15 +15,23 @@ public class SuperSPEED : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Pickup(other);
+           StartCoroutine( Pickup(other) );
         }
     }
 
-    void Pickup(Collider2D player)
+    IEnumerator Pickup(Collider2D player)
     {
         Instantiate(pickupEffect, transform.position, transform.rotation);
 
-        player.transform.localScale *= multiplier;
+        playerSTATS stats = player.GetComponent<playerSTATS>();
+        stats.health *= multiplier;
+
+        GetComponent<PolygonCollider2D>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+
+        yield return new WaitForSeconds(2);
+
+        stats.health /= multiplier;
 
         Destroy(gameObject);
     }

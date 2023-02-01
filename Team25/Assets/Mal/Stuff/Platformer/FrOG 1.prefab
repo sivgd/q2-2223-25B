@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7446360691358685436}
   - component: {fileID: 7446360691358685439}
   - component: {fileID: 2399644068376694977}
+  - component: {fileID: 7403051003030626354}
   m_Layer: 0
   m_Name: FrOG 1
   m_TagString: Player
@@ -102,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   accel: 12
   superaccel: 15
+  fast: 0
 --- !u!61 &7446360691358685437
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -209,3 +211,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7403051003030626354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7446360691358685431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeaebba8f78e7c34ea4b6ca91c697cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
