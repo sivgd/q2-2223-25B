@@ -9,7 +9,7 @@ public class SideMove : MonoBehaviour
     public float jumpStrength;//500
     public float superJumpStrength;//1000
     public bool grounded;
-    public bool fast;
+    public float speedboosttimer;
     private float currentaccel;
     private float currentJumpStrength;
     private Rigidbody2D rb2;
@@ -42,9 +42,12 @@ public class SideMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-
         float horizValue = Input.GetAxis("Horizontal");
-
+        
+        if(speedboosttimer > 0)
+        {
+            speedboosttimer -= 1;
+        }
         if(horizValue == 0)
         {
             a.SetBool("Moving", false);
@@ -106,7 +109,7 @@ public class SideMove : MonoBehaviour
         {
             currentJumpStrength = jumpStrength;
         }
-        if (fast == true)
+        if (speedboosttimer > 0)
         {
             currentaccel = superaccel;
         }
