@@ -231,11 +231,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accel: 12
-  superaccel: 15
+  superaccel: 24
   jumpStrength: 500
   superJumpStrength: 1200
   grounded: 0
   speedboosttimer: 0
+  currentaccel: 0
   frognoiseholder: {fileID: 6607887526601595987}
 --- !u!61 &7446360691358685437
 BoxCollider2D:
