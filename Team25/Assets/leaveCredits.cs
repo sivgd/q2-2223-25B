@@ -26,7 +26,7 @@ public class leaveCredits : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
-        if (delay <= -1950)
+        if (delay <= -1700)
         {
             SceneManager.LoadScene("Menu");
         }
